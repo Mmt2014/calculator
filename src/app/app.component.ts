@@ -22,5 +22,12 @@ clear(){
   this.currvalue='';
   this.toshow = '0'
 }
+back(){
+  this.currvalue=this.currvalue.slice(0,-1)
+  this.toshow = this.currvalue
+  if(this.toshow == ''){this.toshow = '0'}
+  
+
+}
 
 }
